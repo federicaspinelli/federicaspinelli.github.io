@@ -4178,7 +4178,7 @@ input, select, textarea {
 }
 .container .skill .skill-bar.skill8 {
     background: linear-gradient(109.6deg, rgba(253, 199, 141, 1) 11.3%, rgba(249, 143, 253, 1) 100.2%);
-    width: 50%;
+    width: 65%;
 }
 .container .skill .skill-bar.skill9 {
     background: linear-gradient(109.6deg, rgba(253, 199, 141, 1) 11.3%, rgba(249, 143, 253, 1) 100.2%);
@@ -4186,7 +4186,7 @@ input, select, textarea {
 }
 .container .skill .skill-bar.skill10 {
     background: linear-gradient(109.6deg, rgba(253, 199, 141, 1) 11.3%, rgba(249, 143, 253, 1) 100.2%);
-    width: 60%;
+    width: 65%;
 }
 .container .skill .skill-bar.skill11 {
     background: linear-gradient(25deg, #d64c7f, #83141f 50%);
