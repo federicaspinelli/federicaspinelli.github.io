@@ -2181,122 +2181,7 @@ input, select, textarea {
 					border-left: 0;
 				}
 
-<<<<<<< HEAD
 		@media screen and (max-width: 736px) {
-=======
-					#footer .copyright li {
-						border-left: 0;
-						display: block;
-						margin: 0;
-						padding: 0;
-					}
-
-	}
-
-.container .skill {
-    margin-bottom: 35px;
-    position: relative;
-    overflow-x: hidden;
-}
-
-.container .skill::before {
-    content: "";
-    width: 100%;
-    height: 10px;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    border-radius: 10px;
-}
-
-.container .skill .skill-bar:hover::before {
-    height: 100%;
-}
-
-.container .skill p {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-}
-
-.container .skill .skill-bar {
-    width: 100%;
-    height: 10px;
-    display: block;
-    position: relative;
-    border-radius: 10px;
-    animation: animated 1s both;
-}
-
-.container .skill .skill-bar.skill1 {
-    background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
-    width: 90%;
-}
-
-.container .skill .skill-bar.skill2 {
-    background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
-    width: 90%;
-}
-
-.container .skill .skill-bar.skill3 {
-    background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
-    width: 70%;
-}
-
-.container .skill .skill-bar.skill4 {
-    background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
-    width: 80%;
-}
-
-.container .skill .skill-bar.skill5 {
-    background: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
-    width: 90%;
-}
-.container .skill .skill-bar.skill6 {
-    background: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
-    width: 70%;
-}
-.container .skill .skill-bar.skill7 {
-    background: linear-gradient(109.6deg, rgba(253, 199, 141, 1) 11.3%, rgba(249, 143, 253, 1) 100.2%);
-    width: 70%;
-}
-.container .skill .skill-bar.skill8 {
-    background: linear-gradient(109.6deg, rgba(253, 199, 141, 1) 11.3%, rgba(249, 143, 253, 1) 100.2%);
-    width: 65%;
-}
-.container .skill .skill-bar.skill9 {
-    background: linear-gradient(109.6deg, rgba(253, 199, 141, 1) 11.3%, rgba(249, 143, 253, 1) 100.2%);
-    width: 65%;
-}
-.container .skill .skill-bar.skill10 {
-    background: linear-gradient(109.6deg, rgba(253, 199, 141, 1) 11.3%, rgba(249, 143, 253, 1) 100.2%);
-    width: 65%;
-}
-.container .skill .skill-bar.skill11 {
-    background: linear-gradient(25deg, #d64c7f, #83141f 50%);
-    width: 90%;
-}
-.container .skill .skill-bar.skill12 {
-    background: linear-gradient(25deg, #d64c7f, #83141f  50%);
-    width: 90%;
-}
-.container .skill .skill-bar.skill13 {
-    background: linear-gradient(25deg, #d64c7f, #83141f  50%);
-    width: 85%;
-}
-.container .skill .skill-bar.skill14 {
-    background: linear-gradient(25deg, #d64c7f, #83141f  50%);
-    width: 80%;
-}
-.container .skill .skill-bar span {
-    position: absolute;
-    border-top: 0px solid;
-    top: -30px;
-    padding: 3px 0;
-    font-size: 18px;
-    font-weight: 500;
-}
->>>>>>> 07f41018faf0644f6335a6d77c76175bfcb80119
 
 			#footer .copyright li {
 				padding-left: 0.5em;
@@ -2305,7 +2190,6 @@ input, select, textarea {
 
 		}
 
-<<<<<<< HEAD
 		#footer .icons {
 			list-style: none;
 			padding: 0;
@@ -2335,9 +2219,32 @@ input, select, textarea {
 			color: #ffffff;       /* Bianco acceso al passaggio */
 			opacity: 1;           /* Pieno contrasto */
 		}
-=======
-    to {
-        transform: matrix3d(0, 0, 0);
-    }
-}
->>>>>>> 07f41018faf0644f6335a6d77c76175bfcb80119
+		.contact-info {
+			font-size: 0.95em;
+			color: #333333;
+			margin-bottom: 1.5em;
+			text-align: left;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2em;
+			align-items: center;
+		  }
+		  
+		  .contact-info i {
+			margin-right: 0.4em;
+			color: #1a5276;
+			opacity: 0.9;
+		  }
+		  
+		  .contact-info a {
+			color: #1a5276;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		  }
+		  
+		  .contact-info a:hover {
+			color: #000000;
+			text-decoration: underline;
+		  }
+		  
+		  
