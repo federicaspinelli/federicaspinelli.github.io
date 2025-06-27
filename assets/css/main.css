@@ -2273,28 +2273,43 @@ input, select, textarea {
   }
   
   /* ========== MEDIA QUERIES ========== */
-  @media screen and (max-width: 1024px) {
-	.nota-postit-desktop {
-	  display: none;
-	}
-	.nota-postit-mobile {
-	  display: block;
-	}
+/* 🔹 DEFAULT: tutto nascosto */
+.nota-postit-desktop,
+.nota-postit-mobile {
+  display: none;
+}
+
+/* 🔷 Mostra SOLO il post-it desktop in #home su schermi larghi */
+@media screen and (min-width: 1025px) {
+  #home .nota-postit-desktop {
+    display: block;
+    position: fixed;
+    top: 35vh;
+    right: 2vw;
+    width: 20vw;
+    max-width: 300px;
+    min-width: 180px;
+    z-index: 10;
+    transition: transform 0.3s ease;
   }
+
+  #home .nota-postit-desktop:hover {
+    transform: scale(1.08);
+  }
+}
+
+/* 🔸 Mostra SOLO il post-it mobile in #home su schermi piccoli */
+@media screen and (max-width: 1024px) {
+  #home2.nota-postit-mobile {
+    display: block;
+    margin: 2em auto;
+    width: 60vw;
+    max-width: 240px;
+    transform: none;
+  }
+}
   
-  @media screen and (max-width: 768px) {
-	.nota-postit-mobile {
-	  width: 60vw;
-	  max-width: 220px;
-	}
-  }
   
-  @media screen and (max-width: 480px) {
-	.nota-postit-mobile {
-	  width: 55vw;
-	  max-width: 200px;
-	}
-  }
   .formazione-timeline {
 	list-style: none;
 	padding-left: 0;
