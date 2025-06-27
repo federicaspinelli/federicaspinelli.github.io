@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="image/png" href="images/favicon.png">
+		<script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+
 	</head>
 	<body class="is-preload">
 
@@ -26,36 +28,61 @@
 					</nav>
 				<!-- Main -->
 					<div id="main">
-
+						
 						<!-- Me -->
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Federica Spinelli</h1>
-									
-<p>Tecnologo III livello al CNR presso l'Istituto Opera del Vocabolario Italiano. Research Communication Officer per il nodo italiano di DARIAH-ERIC.</p>
-
+							
+										<p>
+											Tecnologa presso l’Istituto Opera del Vocabolario Italiano (OVI) del CNR, con sede all’Accademia della Crusca.
+											L’OVI ospita la segreteria nazionale di DARIAH-ERIC, infrastruttura di ricerca digitale per le arti e le scienze umane, dove ricopro il ruolo di Research Communication Officer.</p>
+									  
 								</header>
+								<!-- Versione fissa per desktop -->
+								<img src="images/nota a margine.png" alt="Nota ironica" class="nota-postit-desktop" />
+
 								<a href="#study" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>Formazione</span></span>
-									<img src="images/BIO.png" alt="" />
+									<img src="images/BIO.png" alt="profile" />
 								</a>
 							</article>
+							
 						<!-- Study -->
-							<article id="study" class="panel">
-								<header>
-									<h2>Formazione</h2>
-								</header>
-								<section>
-									<ul>
-										<li><strong>Master Full Stack Developer</strong> – Selefor CReFIS Academy (2022–2023)</li>
-										<li><strong>Laurea Magistrale - LM-43 - Classe delle lauree magistrali in Metodologie informatiche per le discipline umanistiche</strong> – Università di Pisa (2017–2020), 110/110 e lode</li>
-										<li><strong>Laurea Triennale - L-10 - Classe delle lauree in Lettere</strong> – Università di Pisa (2013–2017), 108/110</li>
-									</ul>
-								</section>
-								<section>
-									
-								</section>
-							</article>
+						<article id="study" class="panel">
+							<header>
+							  <h2>Formazione</h2>
+							</header>
+						  
+							<ul class="formazione-timeline">
+							  <li>
+								<i class="fas fa-graduation-cap"></i>
+								<div class="contenuto">
+								  <h3>Master Full Stack Developer</h3>
+								  <p>Selefor CReFIS Academy, 2022–2023</p>
+								  <a href="https://www.selefor.com/master-per-full-stack-developer/" target="_blank">➜ Sito</a>
+								</div>
+							  </li>
+							  <li>
+								<i class="fas fa-university"></i>
+								<div class="contenuto">
+								  <h3>Laurea Magistrale in Informatica Umanistica</h3>
+								  <p>Università di Pisa, 2017–2020 – 110/110 e lode</p>
+								  <a href="http://www.fileli.unipi.it/infouma/laurea-magistrale" target="_blank">➜ Sito</a>
+								  <a href="https://etd.adm.unipi.it/t/etd-05022020-222813" target="_blank">➜ La mia tesi</a>
+								</div>
+							  </li>
+							  <li>
+								<i class="fas fa-book-reader"></i>
+								<div class="contenuto">
+								  <h3>Laurea Triennale in Informatica Umanistica</h3>
+								  <p>Università di Pisa, 2013–2017 – 108/110</p>
+								  <a href="http://www.fileli.unipi.it/infouma/laurea-triennale/" target="_blank">➜ Sito</a>
+								</div>
+							  </li>
+							</ul>
+						  </article>
+						  
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
@@ -90,22 +117,28 @@
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="http://wafi.iit.cnr.it/lab/LPW/progettini/20170213/spinelli/Index.html" class="image fit" target="_blank"><img src="images/INFORMA.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://federicaspinelli.github.io/XanEdu/XanEdu.html" class="image fit" target="_blank"><img src="images/XANEDU.png" alt=""></a>
-										</div>
 									</div>
 								</section>
 							</article>
 						<!-- Papers -->
 						<article id="papers" class="panel">
 							<header>
-								<h2>Pubblicazioni</h2>
+							  <h2>Pubblicazioni</h2>
 							</header>
-							
-							<section>
-								Lista completa disponibile su <a href="https://iris.cnr.it/cris/rp/rp13881?type=all" target="_blank">IRIS CNR</a>
-							</section>
-						</article>
+						  
+							<div class="pubblicazioni-box">
+							  <div class="qr-collegamenti">
+							  </div>
+							  <div class="link-collegamenti">
+								<p>La lista completa e aggiornata delle mie pubblicazioni è disponibile su:</p>
+								<ul>
+								  <li><i class="fas fa-university"></i> <a href="https://iris.cnr.it/cris/rp/rp13881?type=all" target="_blank">Profilo IRIS – CNR</a></li>
+								  <li><i class="fas fa-id-badge"></i> <a href="https://orcid.org/0000-0002-2195-3930" target="_blank">Profilo ORCID</a></li>
+								</ul>
+							  </div>
+							</div>
+						  </article>
+						  
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
@@ -141,8 +174,10 @@
 								</form>
 							</article>
 					</div>
+					<!-- Versione visibile sotto per mobile -->
+					<img src="images/nota a margine.png" alt="Nota ironica mobile" class="nota-postit-mobile" />
 
-				<!-- Footer -->
+					<!-- Footer -->
 					<div id="footer">
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/federica-spinelli-172426123/" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
@@ -164,6 +199,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			
+			
+			
 	</body>
 </html>

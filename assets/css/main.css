@@ -2246,5 +2246,141 @@ input, select, textarea {
 			color: #000000;
 			text-decoration: underline;
 		  }
-		  
-		  
+
+/* ========== VERSIONE DESKTOP (fissa a lato) ========== */
+.nota-postit-desktop {
+	position: fixed;
+	top: 35vh;
+	right: 2vw;
+	width: 20vw;
+	max-width: 300px;
+	min-width: 180px;
+	z-index: 10;
+	transition: transform 0.3s ease;
+  }
+  
+  .nota-postit-desktop:hover {
+	transform: scale(1.08);
+  }
+  
+  /* ========== VERSIONE MOBILE (visibile sotto) ========== */
+  .nota-postit-mobile {
+	display: none;
+	margin: 2em auto;
+	width: 70vw;
+	max-width: 260px;
+	transition: transform 0.3s ease;
+  }
+  
+  /* ========== MEDIA QUERIES ========== */
+  @media screen and (max-width: 1024px) {
+	.nota-postit-desktop {
+	  display: none;
+	}
+	.nota-postit-mobile {
+	  display: block;
+	}
+  }
+  
+  @media screen and (max-width: 768px) {
+	.nota-postit-mobile {
+	  width: 60vw;
+	  max-width: 220px;
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	.nota-postit-mobile {
+	  width: 55vw;
+	  max-width: 200px;
+	}
+  }
+  .formazione-timeline {
+	list-style: none;
+	padding-left: 0;
+	margin: 2em 0;
+	position: relative;
+  }
+  
+  .formazione-timeline li {
+	position: relative;
+	margin-bottom: 2em;
+	padding-left: 2.5em;
+	border-left: 2px solid #2a405c; /* blu istituzionale */
+  }
+  
+  .formazione-timeline li i {
+	position: absolute;
+	left: -13px;
+	top: 2px;
+	background: #fff;
+	color: #2a405c;
+	font-size: 1.2em;
+	padding: 0.2em;
+	border-radius: 50%;
+	border: 2px solid #2a405c;
+  }
+  
+  .formazione-timeline li .contenuto h3 {
+	margin: 0 0 0.3em;
+	font-weight: 600;
+	font-size: 1.1em;
+  }
+  
+  .formazione-timeline li .contenuto p {
+	margin: 0;
+	font-size: 0.95em;
+	color: #444;
+  }
+  
+  .formazione-timeline li .contenuto a {
+	display: inline-block;
+	margin-top: 0.3em;
+	font-size: 0.9em;
+	text-decoration: none;
+	color: #2a405c;
+  }
+  
+  .formazione-timeline li .contenuto a:hover {
+	text-decoration: underline;
+  }
+  .papers-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	margin: 2em 0;
+	flex-wrap: wrap;
+  }
+  
+  .link-collegamenti p {
+	font-weight: 500;
+	margin-bottom: 0.6em;
+  }
+  
+  .link-collegamenti ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .link-collegamenti li {
+	margin-bottom: 0.4em;
+	font-size: 1em;
+  }
+  
+  .link-collegamenti i {
+	margin-right: 0.5em;
+	color: #1a5276;
+	opacity: 0.9;
+  }
+  
+  .link-collegamenti a {
+	color: #1a5276;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+  
+  .link-collegamenti a:hover {
+	color: #000000;
+	text-decoration: underline;
+  }
